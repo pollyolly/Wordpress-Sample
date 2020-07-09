@@ -1,0 +1,56 @@
+Title: homePostgrid
+
+Layout
+Thumbnail with Link
+/* css:
+font-size:12px;display:block;padding:5px 1px 1px 1px ;
+*/
+Title with Link
+/*
+Char limit: 20,
+link target: new,
+css:
+font-size:24px;display:block;padding:10px;text-decoration:none;color:#222222;
+hover:
+font-size:24px;display:block;padding:10px;text-decoration:none;color:#222222;text-decoration:underline;
+*/
+Post date
+/*
+css:
+font-size:12pt;display:block;padding-bottom:10px;color:#6f6e6e;font-style: tahoma !important;
+*/
+Horizontal Line
+/*
+css:
+font-size:12px;display:block;padding:1px;
+*/
+Excerpt
+/*
+character limit: 30
+css:
+display: block;font-size: 12pt;padding: 5px 1px 5px 1px; text-align: left;color:#6f6e6e;font-style: tahoma !important;
+
+*/
+Read More
+/*
+Link target: new
+css:
+display: block;font-size: 11pt;font-weight: bold;text-align: left;color:#7A1013;font-style: tahoma !important;
+hover:
+display: block;font-size: 11pt;font-weight: bold;text-align: left;color:#7A1013;font-style: tahoma !important;text-decoration: underline;
+*/
+
+Layout Settings:
+Masonry enable: yes
+lazy load enable: no
+grid items width: desktop: 390px, tablet 280px, mobile 90%;
+grid items bakcgroudn color: white;
+grid items height: auto height;
+grid items margin: 5px;
+media height: auto height;
+featured image size: medium large;
+feature image link: yes;
+media source: blank;
+grid container optinos:
+padding: 0px;
+background color: white;

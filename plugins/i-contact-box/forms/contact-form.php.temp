@@ -1,0 +1,47 @@
+<div id="app-icontact-box">
+    <div class="icontact-box-button" style="z-index:9999999;" v-on:click="icbShow = !icbShow">
+	<span class="icontact-envelope fa" v-bind:class="icbShow ? 'fa-envelope' : 'fa-envelope-open'" v-on:mouseover="tooltipstat = !tooltipstat"></span>
+	<div class="data-tooltips" v-bind:style="tooltipstat ? '':{'visibility':'visible'}">Email us</div>
+    </div>
+    <div id="icontact-box" class="icontact-box" v-bind:class="icbShow ? 'contact-box_close' : 'contact-box_open slideInUp animated'">
+        <div class="icontact-box-head" v-on:click="icbShow = !icbShow">
+            <span class="icontact-envelope fa fa-envelope"></span>
+            <span>Email us</span>
+            <span class="icontact-times fa fa-times"></span>
+        </div>
+        <div class="icontact-box-content">
+            <p v-if="errors.lenght">
+                <ul style="margin: 0px !important;">
+                    <li v-for="error in errors" v-bind:style="textstatus ? {'color':'#00573f'} : {'color':'#800000'}">{{ error }}</li>
+                </ul>
+            </p>
+            <form class="icontact-form" v-on:submit.prevent="submitForm">
+                <input type="hidden" name="crf" v-model="crf">
+                <div class="form-input">
+                    Topic:<select name="topic" v-model="topicInput">
+                            <option  disabled value="">Choose...</option>
+                            <option v-for="ltopic in topiclist" v-bind:value="ltopic.topic">{{ ltopic.topic }}</option>
+                        </select>
+                </div>
+                <div class="form-input">
+                    Email:<input type="text" name="email" placeholder="Email" v-model="email">
+                </div>
+                <div class="form-input">
+                    Fullname:<input type="text" name="fullname" placeholder="Fullname" v-model="fullname">
+                </div>
+                <div class="form-input" v-bind:style="topicInput !== 'Other Concerns' ? {'display': 'none'} : ''">
+                    Subject:<input type="text" name="subject"  placeholder="Subject" v-model="subject">
+                </div>
+                <div class="form-input">
+                    Message:<textarea name="message" rows="10" placeholder="Message here..." v-model="message"></textarea>
+                </div>
+                <div class="form-input">
+                    <img v-bind:src="'data:image/png;charset=utf8;base64,'+recaptcha" alt='Captcha' style='margin-right: 5px;float: left;height: 30px; width: 100px;'>
+                    <input type="text" name="code" v-model="code" style="height: 30px;padding:0px 10px;width: 100px;" v-bind:disabled="!formstatus"/>
+                </div>
+                <input type="submit" class="icontact-submit" value="Submit" v-bind:disabled="!formstatus" v-bind:style="!formstatus ? {'display':'none !important'} : ''">
+                <div v-text="formloading" style="font-size: 12pt; margin: 5px 0px 5px 0px;" v-bind:style="formstatus ? {'display':'none !important'} : ''"></div>
+            </form>
+        </div>
+    </div>
+</div>

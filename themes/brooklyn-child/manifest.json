@@ -1,0 +1,45 @@
+{
+  "name": "ILC Diliman",
+  "short_name": "ILC Diliman",
+  "icons": [
+    {
+      "src": "http://ilc.upd.edu.ph/wp-content/uploads/2018/01/ilc-small-icon.png",
+     "type": "image/png",
+    "sizes": "48x48"
+    },
+    {
+      "src": "http://ilc.upd.edu.ph/wp-content/uploads/2018/01/ilc-small-icon.png",
+     "type": "image/png",
+    "sizes": "96x96"
+    },
+    {
+      "src": "http://ilc.upd.edu.ph/wp-content/uploads/2018/01/ilc-small-icon.png",
+     "type": "image/png",
+    "sizes": "128x128"
+    },
+    {
+      "src": "http://ilc.upd.edu.ph/wp-content/uploads/2018/01/ilc-small-icon.png",
+     "type": "image/png",
+    "sizes": "144x144"
+    },
+    {
+      "src": "http://ilc.upd.edu.ph/wp-content/uploads/2018/01/ilc-small-icon.png",
+     "type": "image/png",
+    "sizes": "152x152"
+    },
+    {
+      "src": "http://ilc.upd.edu.ph/wp-content/uploads/2018/01/ilc-small-icon.png",
+     "type": "image/png",
+    "sizes": "192x192"
+    },
+    {
+      "src": "http://ilc.upd.edu.ph/wp-content/uploads/2018/01/ilc-small-icon.png",
+     "type": "image/png",
+     "sizes": "256x256"
+    }
+  ],
+  "display": "standalone",
+  "start_url": "http://ilc.upd.edu.ph",
+  "background_color": "#fff",
+  "theme_color": "#73111b"
+}

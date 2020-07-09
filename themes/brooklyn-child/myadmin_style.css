@@ -1,0 +1,5 @@
+/*TINYMCE*/
+.mce-content-body > p {
+    padding: 0 !important;
+    margin: 2px 0 !important;
+}
