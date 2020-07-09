@@ -2,8 +2,8 @@
 
 function short_url($url){
 
-$username = 'infoadmin';
-$password = 'dilcinfo//web+admin!';
+$username = '';
+$password = '';
 $api_url =  'http://dilc.info/yourls-api.php';
 
 // Init the CURL session
